@@ -1,14 +1,22 @@
-header {
+.header-div {
+  color: green;
+  display: flex;
+  justify-content: space-around;
+}
+main {
   color: green;
   display: flex;
   justify-content: center;
 }
-.headerdiv {
+.main-div {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
 }
-main {
-  color: green;
+.main-div-button {
+  display: flex;
+  justify-content: center;
+}
+.main-div-text {
   display: flex;
   justify-content: center;
 }
