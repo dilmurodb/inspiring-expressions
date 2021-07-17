@@ -1,7 +1,16 @@
 .header-div {
-  color: green;
+  /* color: green; */
   display: flex;
   justify-content: space-around;
+}
+.header-one {
+  color: blue;
+  background-color: lightgreen;
+  border-radius: 30px;
+}
+.header-one-title {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 main {
   display: flex;
@@ -25,9 +34,12 @@ main {
   display: flex;
   justify-content: center;
   background-color: lightgreen;
+  border-radius: 20px;
 }
 .main-text {
-  color: white;
+  color: blue;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 footer {
   position: fixed;

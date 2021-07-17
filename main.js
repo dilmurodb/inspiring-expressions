@@ -2,8 +2,6 @@ const url = "https://api.adviceslip.com/advice";
 function reloadPage() {
   location.reload();
 }
-let a = (document.getElementById("button-text").innerText = "Start");
-console.log(a);
 function getAdvice() {
   fetch(url)
     .then((res) => {
