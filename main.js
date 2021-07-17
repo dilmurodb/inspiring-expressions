@@ -1,4 +1,7 @@
 const url = "https://api.adviceslip.com/advice";
+function reloadPage() {
+  location.reload();
+}
 function getAdvice() {
   fetch(url)
     .then((res) => {

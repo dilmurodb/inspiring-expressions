@@ -4,7 +4,6 @@
   justify-content: space-around;
 }
 main {
-  color: green;
   display: flex;
   justify-content: center;
 }
@@ -19,6 +18,10 @@ main {
 .main-div-text {
   display: flex;
   justify-content: center;
+  background-color: lightgreen;
+}
+.main-text {
+  color: white;
 }
 footer {
   position: fixed;

@@ -10,7 +10,9 @@
   <body>
     <header>
       <div class="header-div">
-        <div class="header-one"><h3>Random Advice</h3></div>
+        <div class="header-one" onClick="reloadPage()">
+          <h3>Random Advice</h3>
+        </div>
         <div class="header-two"><h3>Start</h3></div>
         <div class="header-three"><h3>About</h3></div>
       </div>
@@ -20,8 +22,10 @@
         <div class="main-div-button">
           <button onClick="getAdvice()">Next quote</button>
         </div>
-        <div class="main-div-text" id="quote">
-          <p id="quote">Here will be displayed a quote taken from API</p>
+        <div class="main-div-text">
+          <p id="quote" class="main-text">
+            Here will be displayed a quote taken from API
+          </p>
         </div>
       </div>
     </main>
