@@ -17,6 +17,10 @@
   margin-left: 10px;
   margin-right: 10px;
 }
+.header-three-advice {
+  margin-left: 10px;
+  margin-right: 10px;
+}
 .header-three {
   color: blue;
   background-color: lightgreen;
@@ -44,6 +48,10 @@ main {
   cursor: pointer;
 }
 #button-text {
+  margin: 0;
+  color: green;
+}
+#button-text-trivia {
   margin: 0;
   color: green;
 }

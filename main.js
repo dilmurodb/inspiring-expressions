@@ -45,4 +45,5 @@ function nextQuestion() {
     document.getElementById("quote").innerHTML = "End of the questions";
   }
   count += 1;
+  document.getElementById("button-text-trivia").innerHTML = "Next Question";
 }
