@@ -1,9 +1,19 @@
 .header-div {
-  /* color: green; */
   display: flex;
   justify-content: space-around;
 }
 .header-one {
+  color: blue;
+  background-color: lightgreen;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.header-two {
+  color: blue;
+  background-color: lightgreen;
+  border-radius: 30px;
+}
+.header-three {
   color: blue;
   background-color: lightgreen;
   border-radius: 30px;
@@ -25,6 +35,9 @@ main {
   justify-content: center;
   padding-top: 40px;
   padding-bottom: 40px;
+}
+.button {
+  cursor: pointer;
 }
 #button-text {
   margin: 0;
