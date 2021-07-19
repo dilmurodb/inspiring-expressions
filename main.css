@@ -66,6 +66,30 @@ main {
   margin-right: 10px;
   margin-left: 10px;
 }
+.answer-div {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.true-div {
+  display: flex;
+  justify-content: center;
+  background-color: lightgreen;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+.true-text {
+  color: blue;
+}
+.false-text {
+  color: blue;
+}
+.false-div {
+  display: flex;
+  justify-content: center;
+  background-color: lightgreen;
+  border-radius: 20px;
+}
 footer {
   position: fixed;
   left: 0;
