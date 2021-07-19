@@ -1,7 +1,9 @@
-const url = "https://api.adviceslip.com/advice";
 function reloadPage() {
   location.reload();
 }
+const url = "https://api.adviceslip.com/advice";
+var adviceResults = {};
+
 function getAdvice() {
   fetch(url)
     .then((res) => {
@@ -9,6 +11,7 @@ function getAdvice() {
     })
     .then((res) => {
       console.log("success!", res);
+      adviceResults = res;
       document.getElementById("quote").innerHTML = res.slip.advice;
     })
     .catch((err) => {
@@ -19,7 +22,7 @@ function getAdvice() {
 
 const url1 =
   "https://opentdb.com/api.php?amount=15&category=23&difficulty=medium&type=boolean";
-var allResults = {};
+var triviaResults = {};
 function playTrivia() {
   fetch(url1)
     .then((res) => {
@@ -27,7 +30,7 @@ function playTrivia() {
     })
     .then((res) => {
       console.log("Success trivia", res);
-      allResults = res;
+      triviaResults = res;
     })
     .catch((err) => {
       console.log("something went wrong...", err);
@@ -36,8 +39,8 @@ function playTrivia() {
 let count = 0;
 function nextQuestion() {
   if (count < 15) {
-    document.getElementById("quote").innerHTML =
-      allResults.results[count].question;
+    document.getElementById("quote-trivia").innerHTML =
+      triviaResults.results[count].question;
   } else {
     document.getElementById("quote").innerHTML = "End of the questions";
   }
